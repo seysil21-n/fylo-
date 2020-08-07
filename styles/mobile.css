@@ -1,0 +1,142 @@
+@media (min-width: 375px){
+    body{
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    *{
+        font-family: calibri;
+    }
+    .main{
+        background-image: url("../images/bg-mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 200px 150px 1fr 20px;
+        overflow-x: hidden;
+    }
+    .attribution{
+        grid-row: 5/6;
+        padding: 1px 3px ;
+        background-color: rgb(87, 85, 255);
+        height: 100%;
+        width: 100%;
+        color: white
+    }
+    .attribution a {
+        /* text-decoration: none; */
+        color: white;
+    }
+    .wrapper{
+        display: grid;
+        /* background-color: rgb(130, 150, 238); */
+        grid-row: 2/4;
+        grid-gap: 20px 30px;
+        padding: 0px 30px;
+        grid-template-rows: 200px 150px;
+    }
+    .firstcard{
+        background-color: #2f49a0;
+        border-radius: 15px 100px 15px 15px ;
+        display: grid;
+        grid-template-rows: 50px 50px;
+        padding: 50px 50px 50px 50px; 
+        grid-row-gap: 20px;
+    }
+
+    .logo{
+        background-image: url('/images/logo.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 0;
+    }
+
+    .actions{
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        grid-column-gap: 20px;
+        grid-template-rows: 50px;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .actions div{
+        background-color: rgb(21, 0, 78);
+        border-radius: 10px ;
+
+    }
+
+    .document{
+        background-image: url(/images/icon-document.svg);
+        background-repeat: no-repeat;
+        background-size: 1.5rem;
+        background-position: center;
+    }
+    .folder{
+        background-image: url(/images/icon-folder.svg);
+        background-repeat: no-repeat;
+        background-size: 1.5rem;
+        background-position: center;
+    }
+    .upload{
+        background-image: url(/images/icon-upload.svg);
+        background-repeat: no-repeat;
+        background-size: 1.5rem;
+        background-position: center;
+    }
+
+    .secondcard{
+        grid-row: 2/3;
+        background-color: #2f49a0;
+        border-radius: 15px 15px 15px 15px ;
+        padding: 20px;
+        color: white;
+        display: grid;
+        grid-row: repeat(3, 10px) 100px;
+        position: relative;
+    }
+    .secondcard p {
+        margin: 0;
+    }
+
+    .progressbar{
+        width: 100%;
+        height:100%;
+        background-color: rgb(22, 22, 22);
+        border-radius: 10px;
+    }
+
+    .pgContainer{
+        width: 80%;
+        height: 90%;
+        background-color:  rgb(255, 94, 0);
+        border-radius: 10px;
+    }
+
+    .status-text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .status-text :nth-child(1){
+        grid-column: 1/2;
+        
+        
+    }
+    status-text :nth-child(2){
+        grid-column: 2/3;
+        justify-self: center;
+        
+    }
+    .left{
+        position: absolute;
+        padding: 40px;
+        height: 100px;
+        background-color: white;
+    }
+}
